@@ -1,0 +1,390 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About NETtalk2"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "NETtalk2 Version 1.0",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C) 2007 By Aldo Septyan P.",IDC_STATIC,40,25,
+                    119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_NETTALK2_DIALOG DIALOGEX 0, 0, 356, 312
+STYLE WS_CHILD | WS_VISIBLE
+EXSTYLE WS_EX_APPWINDOW
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Clear",IDC_CLEAR,289,277,50,14
+    PUSHBUTTON      "Speak",IDC_SPEAK,112,277,50,14
+    PUSHBUTTON      "Stop",IDC_STOP,173,277,50,14
+    PUSHBUTTON      "Load",IDC_LOAD,7,277,50,14
+    CONTROL         "",IDC_RICHEDIT1,"RICHEDIT",ES_MULTILINE | WS_VSCROLL | 
+                    WS_HSCROLL | WS_TABSTOP,5,7,336,263
+    CONTROL         "",IDC_RELOG,"RICHEDIT",ES_MULTILINE | WS_VSCROLL | 
+                    WS_HSCROLL | WS_TABSTOP,8,6,336,263
+    PUSHBUTTON      "Log",IDC_SHOWLOG,232,277,50,14
+END
+
+IDD_LEARNING_DIALOG DIALOGEX 0, 0, 361, 288
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_STATUS,16,102,147,136,ES_MULTILINE | WS_VSCROLL | 
+                    WS_HSCROLL
+    EDITTEXT        IDC_MAXEPOCH,63,23,44,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_LEARNINGRATE,63,39,44,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_HIDDENUNIT,63,55,44,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TARGETERROR,63,71,44,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Pembelajaran",IDC_LEARNING,107,263,57,14
+    EDITTEXT        IDC_TEKSINPUT,188,31,140,102,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TEKSFONEM,187,151,141,96,ES_MULTILINE | 
+                    ES_AUTOHSCROLL
+    PUSHBUTTON      "Proses",IDC_PROSES,284,258,44,14
+    LTEXT           "Status",IDC_STSTATUS,16,91,21,8
+    LTEXT           "Max epoch",IDC_STMAXEPOCH,15,26,36,8
+    LTEXT           "Learning rate",IDC_STLEARNRATE,15,42,42,8
+    LTEXT           "Hidden unit",IDC_STHIDDEN,15,58,37,8
+    LTEXT           "Target error",IDC_STTARGET,15,74,38,8
+    LTEXT           "Input teks",IDC_STINPUT,187,19,32,8
+    LTEXT           "Fonem",IDC_STFONEM,187,139,22,8
+    CONTROL         "Progress1",IDC_PROGLEARNING,"msctls_progress32",
+                    WS_BORDER,57,247,107,11
+    LTEXT           "Progress",IDC_STPROG,19,247,28,8
+    PUSHBUTTON      "Simpan",IDC_SAVE,63,263,42,14
+    GROUPBOX        "",IDC_STATIC,10,14,163,267,0,WS_EX_TRANSPARENT
+    GROUPBOX        "",IDC_STATIC,179,14,157,267
+    LTEXT           "Parameter Pembelajaran",IDC_STTITLE1,13,7,154,8
+    LTEXT           "Testing",IDC_STTITLE2,185,7,146,8
+    PUSHBUTTON      "Test",IDC_TEST,19,263,42,14
+END
+
+IDD_MAIN_DIALOG DIALOG DISCARDABLE  0, 0, 358, 378
+STYLE WS_POPUP
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "",IDC_MAINPANEL,"Static",SS_BLACKFRAME,6,39,347,294
+    PUSHBUTTON      "Learning",IDC_PEMBELAJARAN,70,22,50,16
+    PUSHBUTTON      "Pengucapan",IDC_PENGUCAPAN,7,22,58,16
+    PUSHBUTTON      "Kata",IDC_KATA,124,22,50,16
+    PUSHBUTTON      "Pengecualian",IDC_PENGECUALIAN,178,22,64,16
+    PUSHBUTTON      "Singkatan",IDC_SINGKATAN,245,22,65,16
+    LTEXT           "Text-to-Speech dalam Bahasa Indonesia",IDC_STCAPTION,7,
+                    5,305,8
+    CONTROL         "",IDC_MIN,"Button",BS_OWNERDRAW | WS_TABSTOP,314,5,17,
+                    11
+    CONTROL         "",IDC_CLOSE,"Button",BS_OWNERDRAW | WS_TABSTOP,329,5,22,
+                    11
+    CONTROL         "",IDC_PLAY,"Button",BS_OWNERDRAW | NOT WS_VISIBLE | 
+                    WS_TABSTOP,150,346,50,26
+END
+
+IDD_DATA_KATA DIALOG DISCARDABLE  0, 0, 342, 323
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_KATA,55,7,104,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FONEM,55,23,104,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "ë",IDC_SIMBOL2,38,43,18,14
+    PUSHBUTTON      "Tambah",IDC_TAMBAH,110,43,50,14
+    CONTROL         "List1",IDC_DAFTARKATA,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,12,74,316,180
+    LTEXT           "Kata",IDC_STKATA,17,10,16,8
+    LTEXT           "Fonem",IDC_STFONEM,17,26,22,8
+    LTEXT           "Daftar Kata Beserta Fonemnya",IDC_STLIST,12,62,98,8
+    PUSHBUTTON      "Hapus",IDC_DELETE,279,266,50,14
+    PUSHBUTTON      "ê",IDC_SIMBOL1,18,43,18,14
+    PUSHBUTTON      "ö",IDC_SIMBOL3,58,43,18,14
+END
+
+IDD_DATA_SINGKATAN DIALOG DISCARDABLE  0, 0, 342, 323
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_SINGKATAN,72,7,104,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Tambah",IDC_TAMBAH,125,25,50,14
+    CONTROL         "List1",IDC_DAFTARSINGKATAN,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,11,55,316,195
+    LTEXT           "Singkatan",IDC_STSINGKATAN,15,10,33,8
+    LTEXT           "Daftar Singkatan",IDC_STLIST,11,44,54,8
+    PUSHBUTTON      "Hapus",IDC_DELETE,279,264,50,14
+END
+
+IDD_DATA_PENGECUALIAN DIALOG DISCARDABLE  0, 0, 342, 286
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_KATA,79,8,104,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PENGUCAPAN,79,24,104,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "ë",IDC_SIMBOL2,37,44,18,14
+    PUSHBUTTON      "Tambah",IDC_TAMBAH,134,44,50,14
+    CONTROL         "List1",IDC_DAFTARPENGECUALIAN,"SysListView32",
+                    LVS_REPORT | WS_BORDER | WS_TABSTOP,11,75,316,174
+    LTEXT           "Kata",IDC_STKATA,17,11,16,8
+    LTEXT           "Pengucapan",IDC_STPENGUCAPAN,17,27,42,8
+    LTEXT           "Daftar Pengecualian Beserta Pengucapannya",IDC_STLIST,
+                    11,63,146,8
+    PUSHBUTTON      "Hapus",IDC_DELETE,278,265,50,14
+    PUSHBUTTON      "ê",IDC_SIMBOL1,17,44,18,14
+    PUSHBUTTON      "ö",IDC_SIMBOL3,57,44,18,14
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "NETtalk2 MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "NETtalk2\0"
+            VALUE "LegalCopyright", "Copyright (C) 2007\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "NETtalk2.EXE\0"
+            VALUE "ProductName", "NETtalk2 Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_NETTALK2_DIALOG, DIALOG
+    BEGIN
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 305
+        HORZGUIDE, 291
+    END
+
+    IDD_LEARNING_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 354
+        VERTGUIDE, 13
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 281
+    END
+
+    IDD_MAIN_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 351
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 372
+        HORZGUIDE, 18
+        HORZGUIDE, 34
+    END
+
+    IDD_DATA_KATA, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 335
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 316
+    END
+
+    IDD_DATA_SINGKATAN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 335
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 316
+    END
+
+    IDD_DATA_PENGECUALIAN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 335
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 279
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON7               ICON    DISCARDABLE     "res\\icon7.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BUTTON              BITMAP  DISCARDABLE     "res\\BUTTON.BMP"
+IDB_BACK                BITMAP  DISCARDABLE     "res\\BACK.BMP"
+IDB_MIN                 BITMAP  DISCARDABLE     "res\\min.bmp"
+IDB_CLOSE               BITMAP  DISCARDABLE     "res\\close.bmp"
+IDB_TAB                 BITMAP  DISCARDABLE     "res\\tombol.bmp"
+IDB_PLAY                BITMAP  DISCARDABLE     "res\\play.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About NETtalk2..."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Unknown language: 0x21, 0x1 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_IND)
+#ifdef _WIN32
+LANGUAGE 0x21, 0x1
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\NETtalk2.ico"
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\NETtalk2.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Unknown language: 0x21, 0x1 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\NETtalk2.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

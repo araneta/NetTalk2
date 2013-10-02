@@ -1,0 +1,49 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: NETtalk2 - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "D:\DOCUME~1\ALDOPR~1\LOCALS~1\Temp\RSP135.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/NETtalk2.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"G:\Visual C++\My Project\NETtalk2\NETtalk2Dlg.cpp"
+]
+Creating command line "cl.exe @D:\DOCUME~1\ALDOPR~1\LOCALS~1\Temp\RSP135.tmp" 
+Creating temporary file "D:\DOCUME~1\ALDOPR~1\LOCALS~1\Temp\RSP136.tmp" with contents
+[
+Msimg32.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/NETtalk2.pdb" /machine:I386 /out:"Release/NETtalk2.exe" 
+".\Release\1_5SPAW.obj"
+".\Release\ado2.obj"
+".\Release\BackPro.obj"
+".\Release\ButtonStyle.obj"
+".\Release\KataDlg.obj"
+".\Release\LearningDlg.obj"
+".\Release\ListCtrlSort.obj"
+".\Release\MainDlg.obj"
+".\Release\NaturalLanguage.obj"
+".\Release\NETtalk2.obj"
+".\Release\NETtalk2Dlg.obj"
+".\Release\PengecualianDlg.obj"
+".\Release\SingkatanDlg.obj"
+".\Release\StaticStyle.obj"
+".\Release\StdAfx.obj"
+".\Release\TDPSOLA.obj"
+".\Release\TitleStyle.obj"
+".\Release\NETtalk2.res"
+]
+Creating command line "link.exe @D:\DOCUME~1\ALDOPR~1\LOCALS~1\Temp\RSP136.tmp"
+<h3>Output Window</h3>
+Compiling...
+NETtalk2Dlg.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+NETtalk2.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

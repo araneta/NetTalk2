@@ -1,0 +1,44 @@
+Kata dalam Db
+bandëng bandêng      false
+beda bëda      false
+fonêm fonem      false
+idê ide      false
+indonêsia indonesia      false
+mönyêt mönyët      false
+ongkoën ongkos      false
+pêrak përak      false
+töpêng töpëng      false
+ulët ulêt      false
+wörtël wörtêl      false
+
+testing ....
+ Kata dalam database
+ benar : 489, salah : 11, keakuratan : 97.80 percent
+
+Kata tidak ada dalam Db
+këpêrcayaan kêpêrcayaan      false
+öpër öpêr      false
+sêmëntara sêmêntara      false
+dêflasi deflasi      false
+korëksi körëksi      false
+comöt cömöt      false
+sëharusnya sêharusnya      false
+tonjok tönjök      false
+tërtimpa têrtimpa      false
+sêkring sëkring      false
+êtalasê ëtalasê      false
+ëlêmën ëlëmën      false
+kêmah këmah      false
+intërlökal intêrlökal      false
+rëstui rêstui      false
+nëgro negro      false
+bundël bundêl      false
+sösial sosial      false
+tëlêntang têlêntang      false
+mörfologi morfologi      false
+
+testing ....
+ Kata dalam database
+ benar : 489, salah : 11, keakuratan : 97.80 percent
+ Kata tidak ada dalam database
+ benar : 30, salah : 20, keakuratan : 60.00 percent
